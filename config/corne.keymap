@@ -50,10 +50,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&none         &kp Q  &kp W  &kp F                              &kp P  &kp B               &kp J      &kp L          &kp U              &kp Y    &kp SEMI   &none
-&none         &kp A  &kp R  &kp S                              &kp T  &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
-&kp LEFT_GUI  &kp Z  &kp X  &kp C                              &kp D  &kp V               &kp K      &kp H          &kp COMMA          &kp DOT  &kp ENTER  &none
-                            &command_spotlight 0 LEFT_COMMAND  &mo 1  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&none         &kp Q  &kp W  &kp F                              &kp P    &kp B               &kp J      &kp L          &kp U              &kp Y    &kp SEMI   &none
+&none         &kp A  &kp R  &kp S                              &kp T    &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
+&kp LEFT_GUI  &kp Z  &kp X  &kp C                              &kp D    &kp V               &kp K      &kp H          &kp COMMA          &kp DOT  &kp ENTER  &none
+                            &command_spotlight 0 LEFT_COMMAND  &layers  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
