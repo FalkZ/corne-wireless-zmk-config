@@ -23,7 +23,8 @@
             bindings = <&spotlight>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <20>;
+            hold-trigger-key-positions = <24 26 25 13 12 0 1 2 3 4 5 12 13 14 15 16 17 26 27 28 29 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 33 34 35 39 40 41 37 38>;
         };
         layers: layers {
             compatible = "zmk,behavior-mod-morph";
@@ -32,6 +33,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 
@@ -50,10 +52,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&none         &kp Q  &kp W  &kp F                              &kp P  &kp B               &kp J      &kp L          &kp U              &kp Y    &kp SEMI   &none
-&none         &kp A  &kp R  &kp S                              &kp T  &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
-&kp LEFT_GUI  &kp Z  &kp X  &kp C                              &kp D  &kp V               &kp K      &kp H          &kp COMMA          &kp DOT  &kp ENTER  &none
-                            &command_spotlight 0 LEFT_COMMAND  &mo 1  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&none         &kp Q  &kp W  &kp F                              &kp P    &kp B               &kp J      &kp L          &kp U              &kp Y    &kp SEMI   &none
+&none         &kp A  &kp R  &kp S                              &kp T    &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
+&kp LEFT_GUI  &kp Z  &kp X  &kp C                              &kp D    &kp V               &kp K      &kp H          &kp COMMA          &kp DOT  &kp ENTER  &none
+                            &command_spotlight 0 LEFT_COMMAND  &layers  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
