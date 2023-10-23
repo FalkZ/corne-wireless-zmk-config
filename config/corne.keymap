@@ -18,6 +18,23 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
+        command_spotlight: command_spotlight {
+            compatible = "zmk,behavior-hold-tap";
+            label = "COMMAND_SPOTLIGHT";
+            bindings = <&spotlight>;
+            #binding-cells = <2>;
+            tapping-term-ms = <20>;
+            hold-trigger-key-positions = <24>;
+        };
+    };
+
+    macros {
+        spotlight: spotlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "SPOTLIGHT";
+        };
     };
 
     keymap {
@@ -26,10 +43,10 @@
         default_layer {
             label = "Base";
             bindings = <
-&none  &kp Q  &kp W  &kp F     &kp P  &kp B               &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &none
-&none  &kp A  &kp R  &kp S     &kp T  &kp G               &kp M      &kp N  &kp E      &kp I    &kp O     &none
-&none  &kp Z  &kp X  &kp C     &kp D  &kp V               &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &kp LGUI  &mo 1  &space_backspace    &kp RSHFT  &mo 2  &kp ENTER
+&none         &kp Q  &kp W  &kp F                 &kp P  &kp B               &kp J      &kp L          &kp U              &kp Y    &kp SEMI   &none
+&none         &kp A  &kp R  &kp S                 &kp T  &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
+&kp LEFT_GUI  &kp Z  &kp X  &kp C                 &kp D  &kp V               &kp K      &kp H          &kp COMMA          &kp DOT  &kp ENTER  &none
+                            &command_spotlight 0  &mo 1  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
