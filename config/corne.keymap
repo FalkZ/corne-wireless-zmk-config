@@ -54,7 +54,7 @@
 &none  &kp Q  &kp W  &kp F                              &kp P    &kp B               &kp J      &kp L          &kp U              &kp Y    &none      &none
 &none  &kp A  &kp R  &kp S                              &kp T    &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
 &none  &kp Z  &kp X  &kp C                              &kp D    &kp V               &kp K      &kp H          &none              &none    &kp ENTER  &none
-                     &command_spotlight 0 LEFT_COMMAND  &layers  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                     &command_spotlight LEFT_COMMAND 0  &layers  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
