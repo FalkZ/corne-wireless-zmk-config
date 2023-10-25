@@ -46,19 +46,20 @@
         umlaut: umlaut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LOCKING_NUM) &kp N1 &kp N6 &kp N8>;
+            bindings = <&kp LA(KP_NUMBER_1) &kp LA(KP_NUMBER_6) &kp LA(KP_NUMBER_8)>;
             label = "UMLAUT";
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
+
         default_layer {
             label = "Base";
             bindings = <
-&none  &kp Q  &kp W  &kp F                              &kp P    &kp B               &kp J      &kp L          &kp U              &kp Y    &none      &none
-&none  &kp A  &kp R  &kp S                              &kp T    &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
-&none  &kp Z  &kp X  &kp C                              &kp D    &kp V               &kp K      &kp H          &none              &none    &kp ENTER  &none
+&none  &kp Q  &kp W  &kp F                              &kp P    &kp B               &kp J      &kp L          &kp U              &kp Y  &none      &none
+&none  &kp A  &kp R  &kp S                              &kp T    &kp G               &kp M      &kp N          &kp E              &kp I  &kp O      &none
+&none  &kp Z  &kp X  &kp C                              &kp D    &kp V               &kp K      &kp H          &none              &none  &kp ENTER  &none
                      &command_spotlight LEFT_COMMAND 0  &layers  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
