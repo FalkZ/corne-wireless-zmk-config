@@ -51,9 +51,9 @@
         default_layer {
             label = "Base";
             bindings = <
-&none  &kp Q  &kp W  &kp F                              &kp P    &kp B               &kp J      &kp L          &kp U              &kp Y    &kp SEMI   &none
+&none  &kp Q  &kp W  &kp F                              &kp P    &kp B               &kp J      &kp L          &kp U              &kp Y    &none      &none
 &none  &kp A  &kp R  &kp S                              &kp T    &kp G               &kp M      &kp N          &kp E              &kp I    &kp O      &none
-&none  &kp Z  &kp X  &kp C                              &kp D    &kp V               &kp K      &kp H          &kp COMMA          &kp DOT  &kp ENTER  &none
+&none  &kp Z  &kp X  &kp C                              &kp D    &kp V               &kp K      &kp H          &none              &none    &kp ENTER  &none
                      &command_spotlight 0 LEFT_COMMAND  &layers  &space_backspace    &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
@@ -63,7 +63,7 @@
             bindings = <
 &none  &kp N1      &kp N2    &kp N3    &kp N4        &kp N5      &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LESS_THAN  &kp SLASH       &none
 &none  &kp DOLLAR  &kp HASH  &kp PLUS  &kp ASTERISK  &kp PIPE    &kp SINGLE_QUOTE      &kp COMMA         &kp DOT         &kp QUESTION   &kp UNDERSCORE  &none
-&none  &trans      &trans    &trans    &kp CARET     &trans      &trans                &kp GRAVE         &trans          &trans         &trans          &none
+&none  &none       &none     &none     &kp EQUAL     &none       &none                 &kp GRAVE         &none           &none          &none           &none
                              &trans    &trans        &trans      &trans                &trans            &trans
             >;
         };
@@ -71,10 +71,10 @@
         raise_layer {
             label = "Raise";
             bindings = <
-&none  &kp N6  &kp N7       &kp N8     &kp N9     &kp N0           &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN  &kp BACKSLASH       &none
-&none  &kp AT  &kp PERCENT  &kp MINUS  &kp SLASH  &kp AMPERSAND    &kp DOUBLE_QUOTES      &kp SEMICOLON      &kp COLON        &kp EXCLAMATION   &kp RA(UNDERSCORE)  &none
-&none  &trans  &trans       &trans     &trans     &trans           &trans                 &trans             &trans           &trans            &trans              &none
-                            &trans     &trans     &trans           &trans                 &trans             &trans
+&none  &kp N6  &kp N7       &kp N8     &kp N9     &kp N0           &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET    &kp RIGHT_BRACE  &kp GREATER_THAN  &kp BACKSLASH       &none
+&none  &kp AT  &kp PERCENT  &kp MINUS  &kp SLASH  &kp AMPERSAND    &kp DOUBLE_QUOTES      &kp SEMICOLON        &kp COLON        &kp EXCLAMATION   &kp RA(UNDERSCORE)  &none
+&none  &none   &none        &none      &kp CARET  &none            &none                  &kp RA(GRAVE)        &none            &none             &none               &none
+                            &trans     &trans     &trans           &trans                 &trans               &trans
             >;
         };
     };
