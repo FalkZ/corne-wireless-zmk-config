@@ -1,0 +1,71 @@
+layout:
+  qmk_keyboard: corne_rotated
+  qmk_layout: LAYOUT_split_3x5_3
+layers:
+  Base:
+    - t: Q
+      s: 1         6
+    - t: W
+      s: 2         7
+    - t: F
+      s: 3         8
+    - t: P
+      s: 4         9
+    - t: B
+      s: 5         0
+    - t: J
+      s: (         )
+    - t: L
+      s: '[         ]'
+    - t: U
+      s: '{         }'
+    - t: 'Y'
+      s: <         >
+    - t: ESC
+      s: /         \
+    - t: A
+      s: $         @
+    - t: R
+      s: '#         %'
+    - t: S
+      s: +         -
+    - t: T
+      s: '*         /'
+    - t: G
+      s: '|         &'
+    - t: M
+      s: '''         "'
+    - t: 'N'
+      s: ',         ;'
+    - t: E
+      s: '.         :'
+    - t: I
+      s: '?         !'
+    - t: O
+      s: _         –
+    - t: Z
+    - t: X
+    - t: C
+      s: '`         ´'
+    - t: D
+      s: =         ^
+    - t: V
+    - t: K
+      s: ←
+    - t: H
+      s: ↓
+    - t: .
+      s: ↑
+    - t: ⇥
+      s: →
+    - t: ⏎
+    - t: "\U0001F50D"
+      s: ⌘
+    - t: ═↑
+      s: ''
+    - t: ␣
+      s: ⌫
+    - t: ⇧
+      s: ''
+    - t: ⌥
+    - t: ⌃

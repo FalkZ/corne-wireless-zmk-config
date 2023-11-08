@@ -1,0 +1,49 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  Base:
+  - ['', Q, W, F, P, B, J, L, U, Y]
+  - [ESC, '', '', A, R, S, T, G, M, N]
+  - [E, I, O, '', '', Z, X, C, D, V]
+  - - K
+    - H
+    - .
+    - TAB
+    - ENTER
+    - ''
+    - {t: '&spotlight', h: LEFT COMMAND}
+    - {t: Lower, s: Raise}
+    - {t: SPACE, s: BACKSPACE}
+    - RSHFT
+  - [RIGHT ALT, RIGHT CONTROL]
+  Lower:
+  - ['', '1', '2', '3', '4', '5', (, '[', '{', <]
+  - [/, '', '', $, '#', +, '*', '|', '''', ',']
+  - [., '?', _, '', '', '', '', '`', '=', '']
+  - - LEFT ARROW
+    - DOWN ARROW
+    - UP ARROW
+    - RIGHT ARROW
+    - ''
+    - ''
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - Raise
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Raise:
+  - ['', '6', '7', '8', '9', '0', ), ']', '}', '>']
+  - [\, '', '', '@', '%', '-', /, '&', '"', ;]
+  - [':', '!', RA(UNDERSCORE), '', '', '', '', RA(GRAVE), ^, '']
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
