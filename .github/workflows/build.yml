@@ -17,7 +17,7 @@ jobs:
           git config --global user.name "FalkZ"
           git config --global user.email "FalkZ@users.noreply.github.com"
           git fetch origin master:master
-          git merge master
+          git reset --hard master
 
       - uses: actions-rs/toolchain@v1
         with:
