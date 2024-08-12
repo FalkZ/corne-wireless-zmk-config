@@ -10,6 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: visual
+      - name: Merge master into visual
+        run: |
+          git config --global user.name "FalkZ"
+          git config --global user.email "FalkZ@users.noreply.github.com"
+          git merge origin/master
+
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -40,9 +48,6 @@ jobs:
         # Only run on main branch push (e.g. after pull request merge).
         if: github.event_name == 'push'
         run: |
-          git config --global user.name "FalkZ"
-          git config --global user.email "FalkZ@users.noreply.github.com"
-          git checkout visual
           git add ./visual/keymap.png
           git add ./visual/keymap.svg
           git commit -m "Update visual keymap"
