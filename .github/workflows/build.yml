@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - uses: actions-rs/cargo@v1
+        with:
+          command: install
+          args: resvg
       - uses: actions/setup-python@v2
         with:
           python-version: 3.12
@@ -27,8 +34,8 @@ jobs:
       - run: cat ./visual/keymap.svg
       - name: render svg
         run: |
-          sudo apt-get install resvg
           resvg ./assets/keymap.svg ./assets/keymap.png --background=#fff
+
       - name: GIT Commit Build Artifacts
         # Only run on main branch push (e.g. after pull request merge).
         if: github.event_name == 'push'
