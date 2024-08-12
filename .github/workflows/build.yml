@@ -32,7 +32,3 @@ jobs:
           git add ./visual/keymap.svg
           git commit -m "Update visual keymap"
           git push
-      - uses: actions/upload-artifact@v4
-        with:
-          name: visual-keymap
-          path: ./visual/keymap.svg
