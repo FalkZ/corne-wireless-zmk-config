@@ -3,9 +3,8 @@ on:
     branches:
       - master
 jobs:
-  #build:
-  #uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-
+  build-firmware:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
   visual-keymap:
     runs-on: ubuntu-latest
     steps:
