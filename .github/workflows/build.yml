@@ -18,8 +18,6 @@ jobs:
           deno-version: v1.x
       - name: Install pipx
         uses: CfirTsabari/actions-pipx@v1
-      - name: Install resvg
-        run: sudo apt-get install resvg
       - name: Run something using pipx
         run: pipx run keymap-drawer parse -c 10 -z ./config/corne.keymap >./visual/corne_keymap.yaml
       - name: transform keymap
@@ -27,7 +25,10 @@ jobs:
       - name: draw keymap
         run: pipx run keymap-drawer draw ./visual/transformed_keymap.yaml >./visual/keymap.svg
       - run: cat ./visual/keymap.svg
-      - run: svgre ./assets/keymap.svg ./assets/keymap.png --background=#fff
+      - name: render svg
+        run: |
+          sudo apt-get install resvg
+          resvg ./assets/keymap.svg ./assets/keymap.png --background=#fff
       - name: GIT Commit Build Artifacts
         # Only run on main branch push (e.g. after pull request merge).
         if: github.event_name == 'push'
