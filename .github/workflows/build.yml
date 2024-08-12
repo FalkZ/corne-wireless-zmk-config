@@ -1,5 +1,7 @@
-on: [push, pull_request, workflow_dispatch]
-
+on:
+  push:
+    branches:
+      - master
 jobs:
   #build:
   #uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
@@ -25,12 +27,15 @@ jobs:
       - name: draw keymap
         run: pipx run keymap-drawer draw ./visual/transformed_keymap.yaml >./visual/keymap.svg
       - run: cat ./visual/keymap.svg
-      - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
+      - run: svgre ./assets/keymap.svg ./assets/keymap.png --background=#fff
+      - name: GIT Commit Build Artifacts
         # Only run on main branch push (e.g. after pull request merge).
         if: github.event_name == 'push'
         run: |
           git config --global user.name "FalkZ"
           git config --global user.email "FalkZ@users.noreply.github.com"
+          git checkout visual
+          git add ./visual/keymap.png
           git add ./visual/keymap.svg
           git commit -m "Update visual keymap"
-          git push
+          git push -f
