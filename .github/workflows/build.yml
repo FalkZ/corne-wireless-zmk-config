@@ -1,5 +1,29 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  # build:
+  #  uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  visual-keymap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.12
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Install pipx
+        uses: CfirTsabari/actions-pipx@v1
+      - name: Run something using pipx
+        run: pipx run keymap-drawer parse -c 10 -z ./config/corne.keymap >./visual/corne_keymap.yaml
+      - name: transform keymap
+        run: deno run --allow-read --allow-write ./visual/transformKeymap.ts
+      - name: draw keymap
+        run: pipx run keymap-drawer draw ./visual/transformed_keymap.yaml >./visual/keymap.svg
+      - run: cat ./visual/keymap.svg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: keymap.svg
+          path: ./visual/keymap.svg

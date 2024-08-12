@@ -1,0 +1,1 @@
+act push --container-architecture linux/amd64
