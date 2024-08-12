@@ -43,7 +43,7 @@ jobs:
       - run: cat ./visual/keymap.svg
       - name: render svg
         run: |
-          resvg ./visual/keymap.svg ./visual/keymap.png --background=#fff
+          resvg ./visual/keymap.svg ./visual/keymap.png --zoom=4
 
       - name: GIT Commit Build Artifacts
         # Only run on main branch push (e.g. after pull request merge).
