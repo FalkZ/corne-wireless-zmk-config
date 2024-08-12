@@ -1,8 +1,8 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  #build:
+  #uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
 
   visual-keymap:
     runs-on: ubuntu-latest
@@ -16,6 +16,8 @@ jobs:
           deno-version: v1.x
       - name: Install pipx
         uses: CfirTsabari/actions-pipx@v1
+      - name: Install resvg
+        run: sudo apt-get install resvg
       - name: Run something using pipx
         run: pipx run keymap-drawer parse -c 10 -z ./config/corne.keymap >./visual/corne_keymap.yaml
       - name: transform keymap
