@@ -62,11 +62,12 @@ const normalize = (string: string) =>
 ./visual/keymap.svg
 */
 const convertToAsciiSymbol = (key: string) => {
+	if (key.includes("+")) console.log(key);
 	switch (key) {
-		case "RA(GRAVE)":
-			return "´";
-		case "RA(UNDERSCORE)":
-			return "–";
+		case "` AGr+ `":
+			return "` ´";
+		case "_ AGr+ _":
+			return "_ –";
 		case "SPACE":
 			return "␣";
 		case "RIGHT ALT":
@@ -99,10 +100,10 @@ const convertToAsciiSymbol = (key: string) => {
 			return "⇧";
 		case "&spotlight":
 			return "🔍";
-		case "Lower":
+		case "lower":
 			// symbol for layer switching up
 			return "═↑";
-		case "Raise":
+		case "raise":
 			return "";
 
 		default:

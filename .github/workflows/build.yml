@@ -27,3 +27,13 @@ jobs:
         with:
           name: visual-keymap
           path: ./visual/keymap.svg
+      - name:
+          GIT Commit Build Artifacts (coverage, dist, devdist, docs)
+          # Only run on main branch push (e.g. after pull request merge).
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "FalkZ@users.noreply.github.com"
+          git add ./visual/keymap.svg
+          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push

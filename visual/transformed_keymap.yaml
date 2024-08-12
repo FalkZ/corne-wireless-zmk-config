@@ -2,7 +2,7 @@ layout:
   qmk_keyboard: corne_rotated
   qmk_layout: LAYOUT_split_3x5_3
 layers:
-  Base:
+  default:
     - t: Q
       s: 1 6
     - t: W
@@ -61,10 +61,10 @@ layers:
     - t: ⏎
     - t: "\U0001F50D"
       s: ⌘
-    - t: ═↑
-      s: ''
     - t: ␣
       s: ⌫
+    - t: ═↑
+      s: ''
     - t: ⇧
       s: ''
     - t: ⌥
