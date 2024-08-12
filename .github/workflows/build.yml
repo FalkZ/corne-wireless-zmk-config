@@ -1,8 +1,8 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  # build:
-  #  uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
 
   visual-keymap:
     runs-on: ubuntu-latest
@@ -25,5 +25,5 @@ jobs:
       - run: cat ./visual/keymap.svg
       - uses: actions/upload-artifact@v4
         with:
-          name: keymap.svg
+          name: visual-keymap
           path: ./visual/keymap.svg
