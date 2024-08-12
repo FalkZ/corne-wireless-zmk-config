@@ -23,13 +23,8 @@ jobs:
       - name: draw keymap
         run: pipx run keymap-drawer draw ./visual/transformed_keymap.yaml >./visual/keymap.svg
       - run: cat ./visual/keymap.svg
-      - uses: actions/upload-artifact@v4
-        with:
-          name: visual-keymap
-          path: ./visual/keymap.svg
-      - name:
-          GIT Commit Build Artifacts (coverage, dist, devdist, docs)
-          # Only run on main branch push (e.g. after pull request merge).
+      - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
+        # Only run on main branch push (e.g. after pull request merge).
         if: github.event_name == 'push'
         run: |
           git config --global user.name "FalkZ"
@@ -37,3 +32,7 @@ jobs:
           git add ./visual/keymap.svg
           git commit -m "Update visual keymap"
           git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: visual-keymap
+          path: ./visual/keymap.svg
