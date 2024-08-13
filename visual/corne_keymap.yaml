@@ -6,24 +6,24 @@ layers:
   - [E, I, O, '', '', Z, X, C, D, V]
   - - K
     - H
-    - .
-    - TAB
+    - BACKSPACE
+    - SPACE
     - ENTER
     - ''
+    - ''
     - {t: '&spotlight', h: LEFT COMMAND}
-    - {t: SPACE, s: BACKSPACE}
     - {t: lower, s: raise}
     - RSHFT
   - [RIGHT ALT, RIGHT CONTROL]
   lower:
-  - ['', '1', '2', '3', '4', '5', (, '[', '{', <]
+  - ['', '1', '2', '3', '4', '5', '{', '[', (, <]
   - [/, '', '', $, '#', +, '*', '|', '''', ',']
   - [., '?', _, '', '', '', '', '`', '=', '']
   - - LEFT ARROW
     - DOWN ARROW
     - UP ARROW
     - RIGHT ARROW
-    - ''
+    - TAB
     - ''
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -32,7 +32,7 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   raise:
-  - ['', '6', '7', '8', '9', '0', ), ']', '}', '>']
+  - ['', '6', '7', '8', '9', '0', '}', ']', ), '>']
   - [\, '', '', '@', '%', '-', /, '&', '"', ;]
   - [':', '!', AGr+ _, '', '', '', '', AGr+ `, ^, '']
   - - ''

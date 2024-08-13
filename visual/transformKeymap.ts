@@ -130,8 +130,13 @@ keymap.layers.default.forEach((row, rowIndex) => {
 	});
 });
 
+const corneSideIndexes = [0, 11, 12, 23, 24, 35];
+
 keymap.layers = {
-	default: keymap.layers.default.flat().filter(({ t }) => t), //.map((row) => row.slice(1, -1)),
+	default: keymap.layers.default
+		.flat()
+		.map((value, index) => (corneSideIndexes.includes(index) ? null : value))
+		.filter((v) => v !== null), //.map((row) => row.slice(1, -1)),
 };
 
 keymap.layout = {
