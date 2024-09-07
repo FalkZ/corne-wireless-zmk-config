@@ -107,10 +107,22 @@ const normalizeKeyname = (key: string) => {
 		.replaceAll("&", "")
 		.toLowerCase();
 
-	return cutAtMaxLen(ret, 5);
+	if (ret.length > 5) {
+		return cutAtMaxLen(ret, 4) + ret.slice(-1);
+	}
+
+	return ret;
 };
+
+const duplicateCheck = new Set<string>();
+
 const createMofMorph = (keyA: string, keyB: string) => {
 	const unifiedName = `${normalizeKeyname(keyA)}_${normalizeKeyname(keyB)}`;
+
+	if (duplicateCheck.has(unifiedName)) {
+		throw new Error(`Duplicate key: ${unifiedName}`);
+	}
+	duplicateCheck.add(unifiedName);
 
 	const modMorph = `${unifiedName}: ${unifiedName} {
             compatible = "zmk,behavior-mod-morph";
