@@ -9,14 +9,6 @@
 
 / {
     behaviors {
-        space_backspace: space_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_BACKSPACE";
-            bindings = <&kp SPACE>, <&kp BACKSPACE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
-        };
         command_spotlight: command_spotlight {
             compatible = "zmk,behavior-hold-tap";
             label = "COMMAND_SPOTLIGHT";
@@ -26,14 +18,225 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
-        layers: layers {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LAYERS";
-            bindings = <&mo 1>, <&mo 2>;
+       
 
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+       
+        n1_n6: n1_n6 {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "N1_N6";
+                    bindings = <&kp N1>, <&kp N6>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
         };
+        n2_n7: n2_n7 {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "N2_N7";
+                    bindings = <&kp N2>, <&kp N7>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        n3_n8: n3_n8 {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "N3_N8";
+                    bindings = <&kp N3>, <&kp N8>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        n4_n9: n4_n9 {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "N4_N9";
+                    bindings = <&kp N4>, <&kp N9>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        n5_n0: n5_n0 {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "N5_N0";
+                    bindings = <&kp N5>, <&kp N0>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        leftb_right: leftb_right {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "LEFTB_RIGHT";
+                    bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        leftb_right: leftb_right {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "LEFTB_RIGHT";
+                    bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        leftp_right: leftp_right {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "LEFTP_RIGHT";
+                    bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        lesst_great: lesst_great {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "LESST_GREAT";
+                    bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        slash_backs: slash_backs {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "SLASH_BACKS";
+                    bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        dolla_at: dolla_at {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "DOLLA_AT";
+                    bindings = <&kp DOLLAR>, <&kp AT>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        hash_perce: hash_perce {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "HASH_PERCE";
+                    bindings = <&kp HASH>, <&kp PERCENT>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        plus_minus: plus_minus {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "PLUS_MINUS";
+                    bindings = <&kp PLUS>, <&kp MINUS>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        aster_slash: aster_slash {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "ASTER_SLASH";
+                    bindings = <&kp ASTERISK>, <&kp SLASH>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        pipe_amper: pipe_amper {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "PIPE_AMPER";
+                    bindings = <&kp PIPE>, <&kp AMPERSAND>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        singl_doubl: singl_doubl {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "SINGL_DOUBL";
+                    bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        comma_semic: comma_semic {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "COMMA_SEMIC";
+                    bindings = <&kp COMMA>, <&kp SEMICOLON>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        dot_colon: dot_colon {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "DOT_COLON";
+                    bindings = <&kp DOT>, <&kp COLON>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        quest_excla: quest_excla {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "QUEST_EXCLA";
+                    bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        under_raund: under_raund {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "UNDER_RAUND";
+                    bindings = <&kp UNDERSCORE>, <&kp RA(UNDERSCORE)>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        lefta_none: lefta_none {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "LEFTA_NONE";
+                    bindings = <&kp LEFT_ARROW>, <&none>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        downa_none: downa_none {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "DOWNA_NONE";
+                    bindings = <&kp DOWN_ARROW>, <&none>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        uparr_none: uparr_none {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "UPARR_NONE";
+                    bindings = <&kp UP_ARROW>, <&none>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        right_none: right_none {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "RIGHT_NONE";
+                    bindings = <&kp RIGHT_ARROW>, <&none>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        grave_ragra: grave_ragra {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "GRAVE_RAGRA";
+                    bindings = <&kp GRAVE>, <&kp RA(GRAVE)>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        equal_caret: equal_caret {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "EQUAL_CARET";
+                    bindings = <&kp EQUAL>, <&kp CARET>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        };
+        tab_none: tab_none {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "TAB_NONE";
+                    bindings = <&kp TAB>, <&none>;
+
+                    #binding-cells = <0>;
+                    mods = <(MOD_RSFT)>;
+        }; 
     };
 
     macros {
@@ -54,27 +257,17 @@
 &none  &kp Q  &kp W  &kp F                              &kp P             &kp B               &kp J      &kp L          &kp U              &kp Y     &kp ESC    &none
 &none  &kp A  &kp R  &kp S                              &kp T             &kp G               &kp M      &kp N          &kp E              &kp I     &kp O      &none
 &none  &kp Z  &kp X  &kp C                              &kp D             &kp V               &kp K      &kp H          &kp BACKSPACE      &kp SPACE &kp ENTER  &none
-                     &none            &command_spotlight LEFT_COMMAND 0   &layers             &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                     &none            &command_spotlight LEFT_COMMAND 0   &mo 1               &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
         lower_layer {
             label = "Lower";
             bindings = <
-&none  &kp N1          &kp N2           &kp N3             &kp N4          &kp N5          &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS   &kp LESS_THAN    &kp SLASH       &none
-&none  &kp DOLLAR      &kp HASH         &kp PLUS           &kp ASTERISK    &kp PIPE        &kp SINGLE_QUOTE  &kp COMMA         &kp DOT                &kp QUESTION     &kp UNDERSCORE  &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW       &kp RIGHT_ARROW &none           &kp GRAVE         &kp EQUAL         &trans                 &trans           &kp TAB         &none
-                                        &trans    &trans   &trans          &trans           &trans            &trans
-            >;
-        };
-
-        raise_layer {
-            label = "Raise";
-            bindings = <
-&none  &kp N6  &kp N7       &kp N8          &kp N9     &kp N0           &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS   &kp GREATER_THAN  &kp BACKSLASH       &none
-&none  &kp AT  &kp PERCENT  &kp MINUS       &kp SLASH  &kp AMPERSAND    &kp DOUBLE_QUOTES      &kp SEMICOLON      &kp COLON               &kp EXCLAMATION   &kp RA(UNDERSCORE)  &none
-&none  &none   &none        &none           &none      &none            &kp RA(GRAVE)          &kp CARET          &trans                  &trans            &none               &none
-                            &trans          &trans     &trans           &trans                 &trans             &trans
+&none         &n1_n6        &n2_n7        &n3_n8        &n4_n9        &n5_n0        &leftb_right  &leftb_right  &leftp_right  &lesst_great  &slash_backs  &none        
+&none         &dolla_at     &hash_perce   &plus_minus   &aster_slash  &pipe_amper   &singl_doubl  &comma_semic  &dot_colon    &quest_excla  &under_raund  &none        
+&none         &lefta_none   &downa_none   &uparr_none   &right_none   &none         &grave_ragra  &equal_caret  &trans        &trans        &tab_none     &none        
+                                          &trans        &trans        &trans        &trans        &trans        &trans        &trans
             >;
         };
     };
