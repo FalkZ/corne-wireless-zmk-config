@@ -9,10 +9,17 @@
 
 / {
     behaviors {
+        left_cmd: left_command {
+            compatible = "zmk,behavior-keypress";
+            label = "LEFT_COMMAND";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI>;
+        };
+
         cmd_spot: command_spotlight {
             compatible = "zmk,behavior-hold-tap";
             label = "COMMAND_SPOTLIGHT";
-            bindings = <&kp LEFT_COMMAND>, <&spotlight>;
+            bindings = <&left_cmd>, <&spotlight>;
 
             #binding-cells = <0>;
             tapping-term-ms = <200>;
