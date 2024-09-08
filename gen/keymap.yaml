@@ -1,0 +1,111 @@
+baseLayer:
+  - - kp Q
+    - kp W
+    - kp F
+    - kp P
+    - kp B
+    - kp J
+    - kp L
+    - kp U
+    - kp Y
+    - kp ESC
+  - - kp A
+    - kp R
+    - kp S
+    - kp T
+    - kp G
+    - kp M
+    - kp N
+    - kp E
+    - kp I
+    - kp O
+  - - kp Z
+    - kp X
+    - kp C
+    - kp D
+    - kp V
+    - kp K
+    - kp H
+    - kp BACKSPACE
+    - kp SPACE
+    - kp ENTER
+  - - none
+    - cmd_spot LEFT_COMMAND 0
+    - mo 1
+    - kp RSHFT
+    - kp RIGHT_ALT
+    - kp RIGHT_CONTROL
+codeLayer:
+  - - kp N1
+    - kp N2
+    - kp N3
+    - kp N4
+    - kp N5
+    - kp LEFT_BRACE
+    - kp LEFT_BRACKET
+    - kp LEFT_PARENTHESIS
+    - kp LESS_THAN
+    - kp SLASH
+  - - kp DOLLAR
+    - kp HASH
+    - kp PLUS
+    - kp ASTERISK
+    - kp PIPE
+    - kp SINGLE_QUOTE
+    - kp COMMA
+    - kp DOT
+    - kp QUESTION
+    - kp UNDERSCORE
+  - - kp LEFT_ARROW
+    - kp DOWN_ARROW
+    - kp UP_ARROW
+    - kp RIGHT_ARROW
+    - none
+    - kp GRAVE
+    - kp EQUAL
+    - trans
+    - trans
+    - kp TAB
+  - - trans
+    - trans
+    - trans
+    - trans
+    - trans
+    - trans
+codeLayerShift:
+  - - kp N6
+    - kp N7
+    - kp N8
+    - kp N9
+    - kp N0
+    - kp RIGHT_BRACE
+    - kp RIGHT_BRACKET
+    - kp RIGHT_PARENTHESIS
+    - kp GREATER_THAN
+    - kp BACKSLASH
+  - - kp AT
+    - kp PERCENT
+    - kp MINUS
+    - kp SLASH
+    - kp AMPERSAND
+    - kp DOUBLE_QUOTES
+    - kp SEMICOLON
+    - kp COLON
+    - kp EXCLAMATION
+    - kp RA(UNDERSCORE)
+  - - none
+    - none
+    - none
+    - none
+    - none
+    - kp RA(GRAVE)
+    - kp CARET
+    - trans
+    - trans
+    - none
+  - - trans
+    - trans
+    - trans
+    - trans
+    - trans
+    - trans

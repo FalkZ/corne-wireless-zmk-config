@@ -1,0 +1,9 @@
+{
+	"tasks": {
+		"dev": "deno run --watch--allow-read --allow-write ./generate-keymap.ts",
+		"run": "deno run --allow-read --allow-write ./generate-keymap.ts"
+	},
+	"imports": {
+		"@std/yaml": "jsr:@std/yaml@^1.0.5"
+	}
+}
