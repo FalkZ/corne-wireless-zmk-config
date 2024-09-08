@@ -3,3 +3,4 @@
 # Todos
 
 - [ ] delete key
+- [ ] ¨ => opt u

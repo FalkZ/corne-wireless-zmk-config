@@ -1,10 +1,10 @@
 {
-  "tasks": {
-    "dev": "deno run --watch--allow-read --allow-write ./generate-keymap.ts",
-    "run": "deno run --allow-read --allow-write ./generate-keymap.ts"
-  },
-  "imports": {
-    "@std/fs": "jsr:@std/fs@^1.0.3",
-    "@std/yaml": "jsr:@std/yaml@^1.0.5"
-  }
+	"tasks": {
+		"gen:keymap": "deno run --allow-read --allow-write ./generate-keymap.ts",
+		"gen:graphic": "deno run --allow-read --allow-write ./generate-graphic.ts"
+	},
+	"imports": {
+		"@std/fs": "jsr:@std/fs@^1.0.3",
+		"@std/yaml": "jsr:@std/yaml@^1.0.5"
+	}
 }

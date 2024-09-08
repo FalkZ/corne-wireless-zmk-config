@@ -60,7 +60,7 @@ codeLayer:
     - kp DOWN_ARROW
     - kp UP_ARROW
     - kp RIGHT_ARROW
-    - none
+    - kp TILDE
     - kp GRAVE
     - kp EQUAL
     - trans
@@ -97,7 +97,7 @@ codeLayerShift:
     - none
     - none
     - none
-    - none
+    - kp TILDE2
     - kp RA(GRAVE)
     - kp CARET
     - trans
