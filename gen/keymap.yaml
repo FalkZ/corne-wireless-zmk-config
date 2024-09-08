@@ -29,12 +29,12 @@ baseLayer:
     - kp BACKSPACE
     - kp SPACE
     - kp ENTER
-  - - none
+  - - kp LEFT_CONTROL
     - cmd_spot LEFT_COMMAND 0
     - mo 1
     - kp RSHFT
     - kp RIGHT_ALT
-    - kp RIGHT_CONTROL
+    - none
 codeLayer:
   - - kp N1
     - kp N2
