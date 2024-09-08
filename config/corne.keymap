@@ -13,7 +13,7 @@
             compatible = "zmk,behavior-keypress";
             label = "LEFT_COMMAND";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&kp LEFT_COMMAND>;
         };
 
         cmd_spot: command_spotlight {
@@ -25,224 +25,222 @@
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
-       
-
-
+      
         n1_n6: n1_n6 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "N1_N6";
-                    bindings = <&kp N1>, <&kp N6>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "N1_N6";
+            bindings = <&kp N1>, <&kp N6>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         n2_n7: n2_n7 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "N2_N7";
-                    bindings = <&kp N2>, <&kp N7>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "N2_N7";
+            bindings = <&kp N2>, <&kp N7>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         n3_n8: n3_n8 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "N3_N8";
-                    bindings = <&kp N3>, <&kp N8>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "N3_N8";
+            bindings = <&kp N3>, <&kp N8>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         n4_n9: n4_n9 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "N4_N9";
-                    bindings = <&kp N4>, <&kp N9>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "N4_N9";
+            bindings = <&kp N4>, <&kp N9>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         n5_n0: n5_n0 {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "N5_N0";
-                    bindings = <&kp N5>, <&kp N0>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "N5_N0";
+            bindings = <&kp N5>, <&kp N0>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         lefte_righe: lefte_righe {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "LEFTE_RIGHE";
-                    bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFTE_RIGHE";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         leftt_right: leftt_right {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "LEFTT_RIGHT";
-                    bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFTT_RIGHT";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         lefts_righs: lefts_righs {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "LEFTS_RIGHS";
-                    bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFTS_RIGHS";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         lessn_grean: lessn_grean {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "LESSN_GREAN";
-                    bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "LESSN_GREAN";
+            bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         slash_backh: slash_backh {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "SLASH_BACKH";
-                    bindings = <&kp SLASH>, <&kp BACKSLASH>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_BACKH";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         dollr_at: dollr_at {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "DOLLR_AT";
-                    bindings = <&kp DOLLAR>, <&kp AT>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOLLR_AT";
+            bindings = <&kp DOLLAR>, <&kp AT>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         hash_perct: hash_perct {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "HASH_PERCT";
-                    bindings = <&kp HASH>, <&kp PERCENT>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "HASH_PERCT";
+            bindings = <&kp HASH>, <&kp PERCENT>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         plus_minus: plus_minus {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "PLUS_MINUS";
-                    bindings = <&kp PLUS>, <&kp MINUS>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "PLUS_MINUS";
+            bindings = <&kp PLUS>, <&kp MINUS>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         astek_slash: astek_slash {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "ASTEK_SLASH";
-                    bindings = <&kp ASTERISK>, <&kp SLASH>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "ASTEK_SLASH";
+            bindings = <&kp ASTERISK>, <&kp SLASH>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         pipe_amped: pipe_amped {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "PIPE_AMPED";
-                    bindings = <&kp PIPE>, <&kp AMPERSAND>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "PIPE_AMPED";
+            bindings = <&kp PIPE>, <&kp AMPERSAND>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         singe_doubs: singe_doubs {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "SINGE_DOUBS";
-                    bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "SINGE_DOUBS";
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         comma_semin: comma_semin {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "COMMA_SEMIN";
-                    bindings = <&kp COMMA>, <&kp SEMICOLON>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_SEMIN";
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         dot_colon: dot_colon {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "DOT_COLON";
-                    bindings = <&kp DOT>, <&kp COLON>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_COLON";
+            bindings = <&kp DOT>, <&kp COLON>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         quesn_excln: quesn_excln {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "QUESN_EXCLN";
-                    bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESN_EXCLN";
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         undee_raune: undee_raune {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "UNDEE_RAUNE";
-                    bindings = <&kp UNDERSCORE>, <&kp RA(UNDERSCORE)>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDEE_RAUNE";
+            bindings = <&kp UNDERSCORE>, <&kp RA(UNDERSCORE)>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         leftw_none: leftw_none {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "LEFTW_NONE";
-                    bindings = <&kp LEFT_ARROW>, <&none>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFTW_NONE";
+            bindings = <&kp LEFT_ARROW>, <&none>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         downw_none: downw_none {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "DOWNW_NONE";
-                    bindings = <&kp DOWN_ARROW>, <&none>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWNW_NONE";
+            bindings = <&kp DOWN_ARROW>, <&none>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         uparw_none: uparw_none {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "UPARW_NONE";
-                    bindings = <&kp UP_ARROW>, <&none>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "UPARW_NONE";
+            bindings = <&kp UP_ARROW>, <&none>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         righw_none: righw_none {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "RIGHW_NONE";
-                    bindings = <&kp RIGHT_ARROW>, <&none>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHW_NONE";
+            bindings = <&kp RIGHT_ARROW>, <&none>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         grave_ragre: grave_ragre {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "GRAVE_RAGRE";
-                    bindings = <&kp GRAVE>, <&kp RA(GRAVE)>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_RAGRE";
+            bindings = <&kp GRAVE>, <&kp RA(GRAVE)>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         equal_caret: equal_caret {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "EQUAL_CARET";
-                    bindings = <&kp EQUAL>, <&kp CARET>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_CARET";
+            bindings = <&kp EQUAL>, <&kp CARET>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
         tab_none: tab_none {
-                    compatible = "zmk,behavior-mod-morph";
-                    label = "TAB_NONE";
-                    bindings = <&kp TAB>, <&none>;
-
-                    #binding-cells = <0>;
-                    mods = <(MOD_RSFT)>;
+            compatible = "zmk,behavior-mod-morph";
+            label = "TAB_NONE";
+            bindings = <&kp TAB>, <&none>;
+        
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
@@ -261,21 +259,21 @@
         default_layer {
             label = "Base";
             bindings = <
-&none  &kp Q  &kp W  &kp F                              &kp P             &kp B               &kp J      &kp L          &kp U              &kp Y     &kp ESC    &none
-&none  &kp A  &kp R  &kp S                              &kp T             &kp G               &kp M      &kp N          &kp E              &kp I     &kp O      &none
-&none  &kp Z  &kp X  &kp C                              &kp D             &kp V               &kp K      &kp H          &kp BACKSPACE      &kp SPACE &kp ENTER  &none
-                     &none                              &cmd_spot 0 0     &mo 1               &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&none         &kp Q         &kp W         &kp F         &kp P         &kp B         &kp J         &kp L         &kp U         &kp Y         &kp ESC       &none        
+&none         &kp A         &kp R         &kp S         &kp T         &kp G         &kp M         &kp N         &kp E         &kp I         &kp O         &none        
+&none         &kp Z         &kp X         &kp C         &kp D         &kp V         &kp K         &kp H         &kp BACKSPACE &kp SPACE     &kp ENTER     &none        
+                                          &none         &cmd_spot 0 0 &mo 1         &kp RSHFT     &kp RIGHT_ALT &kp RIGHT_CONTROL
             >;
         };
 
         lower_layer {
-            label = "Lower";
+            label = "Code";
             bindings = <
 &none         &n1_n6        &n2_n7        &n3_n8        &n4_n9        &n5_n0        &lefte_righe  &leftt_right  &lefts_righs  &lessn_grean  &slash_backh  &none        
 &none         &dollr_at     &hash_perct   &plus_minus   &astek_slash  &pipe_amped   &singe_doubs  &comma_semin  &dot_colon    &quesn_excln  &undee_raune  &none        
 &none         &leftw_none   &downw_none   &uparw_none   &righw_none   &none         &grave_ragre  &equal_caret  &trans        &trans        &tab_none     &none        
-                                          &trans        &trans        &trans        &trans        &trans        &trans     
-            >;
+                                          &trans        &trans        &trans        &trans        &trans        &trans       
+           >;
         };
     };
 };
