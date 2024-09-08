@@ -1,4 +1,5 @@
 import { parse } from "@std/yaml";
+import { ensureDirSync } from "@std/fs";
 
 const keymapYaml = parse(Deno.readTextFileSync("./keymap.yaml")) as {
 	baseLayer: string[][];
@@ -143,4 +144,5 @@ const createSVG = (content: string) => `
     </g>
 </svg>`;
 
+ensureDirSync("../visual");
 Deno.writeTextFileSync("../visual/keymap.svg", createSVG(content));
