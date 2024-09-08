@@ -218,10 +218,10 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
-        tilde_tild2: tilde_tild2 {
+        tilde_none: tilde_none {
             compatible = "zmk,behavior-mod-morph";
-            label = "TILDE_TILD2";
-            bindings = <&kp TILDE>, <&kp TILDE2>;
+            label = "TILDE_NONE";
+            bindings = <&kp TILDE>, <&none>;
         
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
@@ -279,7 +279,7 @@
             bindings = <
 &none         &n1_n6        &n2_n7        &n3_n8        &n4_n9        &n5_n0        &lefte_righe  &leftt_right  &lefts_righs  &lessn_grean  &slash_backh  &none        
 &none         &dollr_at     &hash_perct   &plus_minus   &astek_slash  &pipe_amped   &singe_doubs  &comma_semin  &dot_colon    &quesn_excln  &undee_raune  &none        
-&none         &leftw_none   &downw_none   &uparw_none   &righw_none   &tilde_tild2  &grave_ragre  &equal_caret  &trans        &trans        &tab_none     &none        
+&none         &leftw_none   &downw_none   &uparw_none   &righw_none   &tilde_none   &grave_ragre  &equal_caret  &trans        &trans        &tab_none     &none        
                                           &trans        &trans        &trans        &trans        &trans        &trans       
            >;
         };
