@@ -1,8 +1,0 @@
-{
-  "tasks": {
-    "dev": "deno run --allow-read --allow-write ./visual/transformKeymap.ts"
-  },
-  "imports": {
-    "@std/yaml": "jsr:@std/yaml@^1.0.5"
-  }
-}
