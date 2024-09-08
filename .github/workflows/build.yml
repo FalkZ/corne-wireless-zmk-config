@@ -5,3 +5,29 @@ on:
 jobs:
   build-firmware:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  keymap-visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: visual
+      - name: merge master into visual
+        run: |
+          git config --global user.name "FalkZ"
+          git config --global user.email "FalkZ@users.noreply.github.com"
+          git fetch origin master:master
+          git reset --hard master
+
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: generate graphic
+        run: cd ./gen && deno run --allow-read --allow-write ./generate-graphic.ts
+      - name: git commit visual keymap
+        # Only run on main branch push (e.g. after pull request merge).
+        if: github.event_name == 'push'
+        run: |
+          git add ./visual/keymap.svg
+          git commit -m "Update visual keymap"
+          git push -f
