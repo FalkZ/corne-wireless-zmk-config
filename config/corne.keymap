@@ -9,12 +9,12 @@
 
 / {
     behaviors {
-        command_spotlight: command_spotlight {
+        cmd_spot: command_spotlight {
             compatible = "zmk,behavior-hold-tap";
             label = "COMMAND_SPOTLIGHT";
-            bindings = <&kp>, <&spotlight>;
+            bindings = <&kp LEFT_COMMAND>, <&spotlight>;
 
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
@@ -257,7 +257,7 @@
 &none  &kp Q  &kp W  &kp F                              &kp P             &kp B               &kp J      &kp L          &kp U              &kp Y     &kp ESC    &none
 &none  &kp A  &kp R  &kp S                              &kp T             &kp G               &kp M      &kp N          &kp E              &kp I     &kp O      &none
 &none  &kp Z  &kp X  &kp C                              &kp D             &kp V               &kp K      &kp H          &kp BACKSPACE      &kp SPACE &kp ENTER  &none
-                     &none            &command_spotlight LEFT_COMMAND 0   &mo 1               &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                     &none                              &cmd_spot         &mo 1               &kp RSHFT  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
